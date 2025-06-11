@@ -12,7 +12,7 @@ Make synchronous web requests with cross-platform support.
 
 ## Installation
 
-    npm install sync-request
+    npm install @carriyo/sync-request
 
 ## Usage
 
@@ -51,6 +51,8 @@ var res = request('POST', 'https://example.com/create-user', {
 });
 var user = JSON.parse(res.getBody('utf8'));
 ```
+
+Note: You may have to use `request.cleanup()` to close `sync-rpc`'s child process. While debugging locally, you want debugger to detach properly from processes. And also in unit tests, some test reports don't exit properly.
 
 **Method:**
 

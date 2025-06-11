@@ -4,7 +4,7 @@ import {URL} from 'url';
 import {Req, Res} from './messages';
 import {FormData, getFormDataEntries} from './FormData';
 import {Options, MessageOptions} from './Options';
-const init = require('sync-rpc');
+const init = require('@carriyo/sync-rpc');
 const remote = init(require.resolve('./worker'));
 
 export {HttpVerb, Response, Options};
@@ -30,3 +30,4 @@ export default function request(
 module.exports = request;
 module.exports.default = request;
 module.exports.FormData = FormData;
+module.exports.cleanup = init.cleanup;
