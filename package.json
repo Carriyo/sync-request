@@ -1,6 +1,6 @@
 {
   "name": "@carriyo/sync-request",
-  "version": "6.1.0-beta.1",
+  "version": "6.1.0-beta.2",
   "description": "Make synchronous web requests",
   "main": "lib/index.js",
   "browser": "lib/browser.js",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@carriyo/sync-rpc": "^1.3.6-beta.1",
+    "@carriyo/sync-rpc": "^1.3.6-beta.2",
     "http-response-object": "^3.0.1",
     "then-request": "^6.0.0"
   },
@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ForbesLindesay/sync-request.git"
+    "url": "https://github.com/Carriyo/sync-request.git"
   },
   "author": "ForbesLindesay",
   "license": "MIT",
